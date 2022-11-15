@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+}
+.app {
+    display: grid;
+    grid-template-rows: 0.5fr 5fr 379px;
+}
+
+.header,
+.footer {
+    background-color: #141414;
+    justify-content:space-between;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+}
+.header__logo-container{
+    align-self: center;
+    text-align: right;
+    padding-left: 190px;
+}
+.header__logo{
+    width: 90px;
+}
+.header__player{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.header__backward,
+.header__play,
+.header__forward{
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+.header__navigation{
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+}
+.header__list{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    align-self: center;
+}
+.header__item,
+.footer__lang,
+.content__menu-item{
+    display: inline;
+    font-size: 14px;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
+.header__search{
+    align-self: center;
+    width: 14px;
+}
+.header__avatar{
+    align-self: center;
+    width: 30px;
+}
+.footer{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    padding-top: 48px;
+}
+.footer__top{
+    height: 162px;
+}
+.footer__top,
+.footer__bottom{
+    padding-bottom: 48px;
+    box-sizing: border-box;
+}
+.footer__bottom{
+    padding-top: 18px;
+    border-top: 1px solid #222;
+}
+.footer__container{
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    height: 114px;
+}
+.footer__row{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.footer__col{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 20%;
+    float: left;
+    min-height: 1px;
+}
+.footer__heading{
+    color: #666;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Grande,Helvetica;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.footer__links,
+.footer__lang-selector{
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.footer__languages{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 900px;
+    float: left;
+}
+.footer__lang{
+    font-size: 13px;
+    margin-left: 0px;
+    margin-right: 6px;
+}
+.footer__timezone{
+    font-size: 13px;
+    margin-top: 6px;
+}
+.footer__info{
+    color: #666;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 12px;
+}
+.footer__info-item{
+    display: inline-block;
+}
+.footer__logo{
+    font-size: 12px;
+    text-align: right;
+    width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+.footer__image{
+    width: 37px;
+    height: 20px;
+}
+.content{
+    text-align: center;
+    padding-top: 58px;
+    font-family: Grande, Helvetica;
+}
+h2{
+    margin-top: 30px;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+h3{
+    font-size: 18px;
+}
+.content__singers-container{
+    display: grid;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 45px;
+    margin-bottom: 90px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.content__singer{
+    height: 200px;
+    clip-path: circle(42% at 75px 75px);
+    z-index: 0;
+}
+.content__name,
+.content__song-name{
+    margin-top: -40px;
+    margin-left: 17.5px;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.content__genre{
+    color: darkgray;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 17.5px;
+    margin-bottom: 20px;
+}
+.content__songs-container{
+    display: grid;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 150px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 70px);
+    padding-top: 45px;
+    grid-row-gap: 15px;
+}
+.content__song{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.content__song-info{
+    width: 100%;
+    text-align: left;
+}
+.content__song-name{
+    margin-top: 0px;
+}
+.content__album-cover{
+    width: 65px;
+    height: 65px;
+}
+.content__singer-name{
+    margin-left: 17.5px;
+    font-size: 13px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.content__main-container{
+    display: flex;
+    padding-top: 25px;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.content__results{
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-right: 20px;
+    width: 70%;
+    border-top: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+}
+.content__see-more{
+    width: 30%;
+    border-top: 1px solid darkgray;
+    background-color: rgb(247, 247, 239);
+}
+.content__search-results{
+    margin-top: 24px;
+    font-size: 30px;
+    letter-spacing: -.4px;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-left: 100px;
+}
+.content__menu{
+    text-align: left;
+    margin-left: 100px;
+}
+.content__menu-item{
+    color: #141414;
+    margin-left: 0px;
+    margin-right: 15px;
+}
+input[type=search]{
+    width: 721px;
+    height: 30px;
+}
+input[type=submit]{
+    height: 30px;
+    width: 70px;
+    color: lightcyan;
+    font-family: Grande, Helvetica;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 4px;
+    background-color: darkslategrey;
+}
+.content__label{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.content__artists,
+.content__albums{
+    display: grid;
+    grid-template-columns: repeat(4, 199px);
+    grid-template-rows: repeat(2, 199px);
+    column-gap: 0px;
+}
+.content__unknown-artist,
+.content__top-album{
+    width: 199px;
+    height: 199px;
+}
+.content__artist-container,
+.content__album-container{
+    position: relative;
+    margin-top: -35px;
+    box-sizing: border-box;
+}
+.content__artist-name,
+.content__listeners,
+.content__album-name,
+.content__artist-under-album{
+    padding-left: 10px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    position: absolute;
+}
+.content__artist-name,
+.content__album-name{
+    padding-right: 10px;
+    bottom: 0;
+}
+.content__listeners,
+.content__artist-under-album{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 12px;
+}
+.content__image-gradient{
+    position: relative;
+}
+.content__image-gradient::after{
+    content: "";
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(180deg,transparent 0,rgba(0,0,0,.35) 70%,rgba(0,0,0,.7));
+}
+.content__more-link{
+    margin-top: 12px;
+    text-align: right;
+    color: #005399;
+}
+.content__chart{
+    margin-top: 24px;
+    display: block;
+}
+.content__chart-row{
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    align-items: center;
+    border-bottom: 1px solid #ebebeb;
+}
+.content__chart-play{
+    width: 32px;
+    margin-right: 7px;
+}
+.content__table-play{
+    height: 16px;
+    width: 16px;
+}
+.content__chart-image{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.content__table-album{
+    width: 32px;
+    height: 32px;
+}
+.content__chart-song{
+    width: 60%;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-weight: 700;
+    font-size: 14px;
+    overflow: hidden;
+    letter-spacing: -.6px;
+}
+.content__chart-artist{
+    margin-left: 7px;
+    margin-right: 7px;
+    width: 40%;
+}
+.content__table-artist{
+    font-size: 14px;
+    overflow: hidden;
+    letter-spacing: -.2px;
+}
+.content__time{
+    margin-left: 7px;
+    color: #999;
+    text-align: right;
+    width: 50px;
+    font-size: 14px;
+    overflow: hidden;
+    letter-spacing: -.2px;
+}
+tbody{
+    display: block;
+}
+.content__ads{
+    margin-top: 50px;
+    font-size: 12px;
+    letter-spacing: -.2px;
+    color: #999;
+}
+.content__upgrade{
+    text-decoration: underline;
+}
