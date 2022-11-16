@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="../src/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__player">
+        <img class="header__albumcover" src="https://www.last.fm/static/images/defaults/player_default_album.430223706b14.png">
+        <img class="header__backward" src="%PUBLIC_URL%/backward.png"/>
+        <img class="header__play" src="%PUBLIC_URL%/play.png"/>
+        <img class="header__forward" src="%PUBLIC_URL%/forward.png"/>
+      </div>
+      <div class="header__logo-container">
+        <img class="header__logo" src="%PUBLIC_URL%/logo.png"/>
+      </div>
+      <div class="header__navigation">
+        <img class="header__search" src="%PUBLIC_URL%/search.png">
+        <ul class="header__list">
+          <li class="header__item">Home</li>
+          <li class="header__item">Live</li>
+          <li class="header__item">Music</li>
+          <li class="header__item">Charts</li>
+          <li class="header__item">Events</li>
+          <li class="header__item">Features</li>
+        </ul>
+        <img class="header__avatar" src="%PUBLIC_URL%/default-avatar.png">
+      </div>
+    </header>
+    <main class="content">
+      <h3 class="content__search-results">Search results for "never gonna give you up"</h3>
+      <ul class="content__menu">
+        <li class="content__menu-item">Top Results</li>
+        <li class="content__menu-item">Artists</li>
+        <li class="content__menu-item">Albums</li>
+        <li class="content__menu-item">Tracks</li>
+      </ul>
+      <div class="content__main-container">
+        <div class="content__results">
+          <p>
+            <input type="search" placeholder="Введите запрос" class="content__searh-line">
+            <input type="submit" value="Search" class="content__button">
+          </p>
+          <p class="content__label">Artists</p>
+          <div class="content__artists">
+            <div>
+              <div class="content__image-gradient">
+                <img class="content__unknown-artist" src="%PUBLIC_URL%/star.jpg">
+              </div>
+              <div class="content__artist-container">
+                <p class="content__artist-name">Never Gonna Give You Up</p>
+              </div>
+              <p class="content__listeners">1,751 listeners</p>
+            </div>
+            <div>
+              <div class="content__image-gradient">
+                <img class="content__unknown-artist" src="%PUBLIC_URL%/star.jpg">
+              </div>
+              <div class="content__artist-container">
+                <p class="content__artist-name">Never Gonna Give You Up (8 Bit Remix Cover Version) [Tribute to Rick Astley]</p>
+              </div>
+              <p class="content__listeners">62 listeners</p>
+            </div>            
+            <div>
+              <div class="content__image-gradient">
+                <img class="content__unknown-artist" src="%PUBLIC_URL%/star.jpg">
+              </div>
+              <div class="content__artist-container">
+                <p class="content__artist-name">Never Gonna Give You Up (J</p>
+              </div>
+              <p class="content__listeners">43 listeners</p>
+            </div>            
+            <div>
+              <div class="content__image-gradient">
+                <img class="content__unknown-artist" src="%PUBLIC_URL%/star.jpg">
+              </div>
+              <div class="content__artist-container">
+                <p class="content__artist-name">RICK ASTLEY - never gonna give you up 2004' (white label club remix)</p>
+              </div>
+              <p class="content__listeners">142 listeners</p>
+            </div>            
+            <div>
+              <div class="content__image-gradient">
+                <img class="content__unknown-artist" src="%PUBLIC_URL%/star.jpg">
+              </div>
+              <div class="content__artist-container">
+                <p class="content__artist-name">"Never Gonna Give You Up" scene</p>
+              </div>
+              <p class="content__listeners">1,751 listeners</p>
+            </div>            
+            <div>
+              <div class="content__image-gradient">
+                <img class="content__unknown-artist" src="%PUBLIC_URL%/star.jpg">
+              </div>
+              <div class="content__artist-container">
+                <p class="content__artist-name">"Never Gonna Give You Up" (1987 VS 2022) Side</p>
+              </div>
+              <p class="content__listeners">9 listeners</p>
+            </div>            
+            <div>
+              <div class="content__image-gradient">
+                <img class="content__unknown-artist" src="%PUBLIC_URL%/star.jpg">
+              </div>
+              <div class="content__artist-container">
+                <p class="content__artist-name">Never Never Gonna Give You Up</p>
+              </div>
+              <p class="content__listeners">69 listeners</p>
+            </div>            
+            <div>
+              <div class="content__image-gradient">
+                <img class="content__unknown-artist" src="%PUBLIC_URL%/star.jpg">
+              </div>
+              <div class="content__artist-container">
+                <p class="content__artist-name">NEVER GONNA GIVE YOU UP - RICK ASTLEY</p>
+              </div>
+              <p class="content__listeners">21 listeners</p>
+            </div>
+          </div>
+          <p class="content__more-link">More artists</p>
+          <p class="content__label">Albums</p>
+          <div class="content__albums">
+            <div>
+              <div class="content__image-gradient">
+              <img class="content__top-album" src="%PUBLIC_URL%/neverbeez.jpg">
+              </div>
+              <div class="content__album-container">
+                <p class="content__album-name">NEVER GONNA GIVE YOU UP</p>
+              </div>
+              <p class="content__artist-under-album">Mac Beez</p>
+            </div>  
+            <div>
+              <div class="content__image-gradient">
+              <img class="content__top-album" src="%PUBLIC_URL%/disc.jpg">
+              </div>
+              <div class="content__album-container">
+                <p class="content__album-name">NEVER GONNA GIVE YOU UP</p>
+              </div>
+              <p class="content__artist-under-album">Formal Chicken</p>
+            </div>  
+            <div>
+              <div class="content__image-gradient">
+              <img class="content__top-album" src="%PUBLIC_URL%/disc.jpg">
+              </div>
+              <div class="content__album-container">
+                <p class="content__album-name">NEVER GONNA GIVE YOU UP</p>
+              </div>
+              <p class="content__artist-under-album">Radioclub</p>
+            </div>  
+            <div>
+              <div class="content__image-gradient">
+              <img class="content__top-album" src="%PUBLIC_URL%/neverastley.jpg">
+              </div>
+              <div class="content__album-container">
+                <p class="content__album-name">NEVER GONNA GIVE YOU UP</p>
+              </div>
+              <p class="content__artist-under-album">Rick Astley</p>
+            </div>  
+            <div>
+              <div class="content__image-gradient">
+              <img class="content__top-album" src="%PUBLIC_URL%/neveranimal.jpg">
+              </div>
+              <div class="content__album-container">
+                <p class="content__album-name">NEVER GONNA GIVE YOU UP</p>
+              </div>
+              <p class="content__artist-under-album">The Animal In Me</p>
+            </div>  
+            <div>
+              <div class="content__image-gradient">
+              <img class="content__top-album" src="%PUBLIC_URL%/neverhazlett.jpg">
+              </div>
+              <div class="content__album-container">
+                <p class="content__album-name">NEVER GONNA GIVE YOU UP</p>
+              </div>
+              <p class="content__artist-under-album">Hazlett</p>
+            </div>  
+            <div>
+              <div class="content__image-gradient">
+              <img class="content__top-album" src="%PUBLIC_URL%/neversmash.jpg">
+              </div>
+              <div class="content__album-container">
+                <p class="content__album-name">NEVER GONNA GIVE YOU UP</p>
+              </div>
+              <p class="content__artist-under-album">Smash Mouth</p>
+            </div>  
+            <div>
+              <div class="content__image-gradient">
+              <img class="content__top-album" src="%PUBLIC_URL%/disc.jpg">
+              </div>
+              <div class="content__album-container">
+                <p class="content__album-name">NEVER GONNA GIVE YOU UP (Lofi Remix)</p>
+              </div>
+              <p class="content__artist-under-album">Peng Lexer</p>
+            </div>  
+          </div>
+          <p class="content__more-link">More albums</p>
+          <p class="content__label">Tracks</p>
+          <table class="content__chart">
+            <tbody>
+              <tr class="content__chart-row">
+                <td class="content__chart-play">
+                  <img src="%PUBLIC_URL%/tableplay.png" class="content__table-play">
+                </td>
+                <td class="content__chart-image">
+                  <img class="content__table-album" src="%PUBLIC_URL%/astleyalbum.jpg">
+                </td>
+                <td class="content__chart-song">
+                  <p class="content__table-song">Never Gonna Give You Up</p>
+                </td>
+                <td class="content__chart-artist">
+                  <p class="content__table-artist">Rick Astley</p>
+                </td>
+                <td class="content__time">3:31</td>
+              </tr>
+              <tr class="content__chart-row">
+                <td class="content__chart-play">
+                  <img src="%PUBLIC_URL%/tableplay.png" class="content__table-play">
+                </td>
+                <td class="content__chart-image">
+                  <img class="content__table-album" src="%PUBLIC_URL%/blackalbum.jpg">
+                </td>
+                <td class="content__chart-song">
+                  <p class="content__table-song">Never Gonna Give You Up</p>
+                </td>
+                <td class="content__chart-artist">
+                  <p class="content__table-artist">The Black Keys</p>
+                </td>
+                <td class="content__time">3:39</td>
+              </tr>
+              <tr class="content__chart-row">
+                <td class="content__chart-play">
+                  <img src="%PUBLIC_URL%/tableplay.png" class="content__table-play">
+                </td>
+                <td class="content__chart-image">
+                  <img class="content__table-album" src="%PUBLIC_URL%/whitealbum.jpg">
+                </td>
+                <td class="content__chart-song">
+                  <p class="content__table-song">Never, Never Gonna Give You Up</p>
+                </td>
+                <td class="content__chart-artist">
+                  <p class="content__table-artist">Barry White</p>
+                </td>
+                <td class="content__time">4:09</td>
+              </tr>
+              <tr class="content__chart-row">
+                <td class="content__chart-play">
+                  <img src="%PUBLIC_URL%/tableplay.png" class="content__table-play">
+                </td>
+                <td class="content__chart-image">
+                  <img class="content__table-album" src="%PUBLIC_URL%/cakealbum.jpg">
+                </td>
+                <td class="content__chart-song">
+                  <p class="content__table-song">Never, Never Gonna Give You Up</p>
+                </td>
+                <td class="content__chart-artist">
+                  <p class="content__table-artist">Cake</p>
+                </td>
+                <td class="content__time">3:50</td>
+              </tr>
+              <tr class="content__chart-row">
+                <td class="content__chart-play">
+                  <img src="%PUBLIC_URL%/tableplay.png" class="content__table-play">
+                </td>
+                <td class="content__chart-image">
+                  <img class="content__table-album" src="%PUBLIC_URL%/lisaalbum.jpg">
+                </td>
+                <td class="content__chart-song">
+                  <p class="content__table-song">Never, Never Gonna Give You Up</p>
+                </td>
+                <td class="content__chart-artist">
+                  <p class="content__table-artist">Lisa Stansfield</p>
+                </td>
+                <td class="content__time">3:33</td>
+              </tr>
+              <tr class="content__chart-row">
+                <td class="content__chart-play">
+                  <img src="%PUBLIC_URL%/tableplay.png" class="content__table-play">
+                </td>
+                <td class="content__chart-image">
+                  <img class="content__table-album" src="%PUBLIC_URL%/disc.jpg">
+                </td>
+                <td class="content__chart-song">
+                  <p class="content__table-song">Never Gonna Give You Up</p>
+                </td>
+                <td class="content__chart-artist">
+                  <p class="content__table-artist">Barry White</p>
+                </td>
+                <td class="content__time">7:58</td>
+              </tr>
+              <tr class="content__chart-row">
+                <td class="content__chart-play">
+                  <img src="%PUBLIC_URL%/tableplay.png" class="content__table-play">
+                </td>
+                <td class="content__chart-image">
+                  <img class="content__table-album" src="%PUBLIC_URL%/neverbeez.jpg">
+                </td>
+                <td class="content__chart-song">
+                  <p class="content__table-song">Never Gonna Give You Up</p>
+                </td>
+                <td class="content__chart-artist">
+                  <p class="content__table-artist">Mac Beez</p>
+                </td>
+                <td class="content__time">3:32</td>
+              </tr>
+              <tr class="content__chart-row">
+                <td class="content__chart-play">
+                  <img src="%PUBLIC_URL%/tableplay.png" class="content__table-play">
+                </td>
+                <td class="content__chart-image">
+                  <img class="content__table-album" src="%PUBLIC_URL%/disc.jpg">
+                </td>
+                <td class="content__chart-song">
+                  <p class="content__table-song">Never Gonna Give You Up - 7" Mix</p>
+                </td>
+                <td class="content__chart-artist">
+                  <p class="content__table-artist">Rick Astley</p>
+                </td>
+                <td class="content__time"></td>
+              </tr>
+              <tr class="content__chart-row">
+                <td class="content__chart-play">
+                  <img src="%PUBLIC_URL%/tableplay.png" class="content__table-play">
+                </td>
+                <td class="content__chart-image">
+                  <img class="content__table-album" src="%PUBLIC_URL%/myersalbum.jpg">
+                </td>
+                <td class="content__chart-song">
+                  <p class="content__table-song">Never Gonna Give You Up (Japanese Version)</p>
+                </td>
+                <td class="content__chart-artist">
+                  <p class="content__table-artist">Caitlin Myers</p>
+                </td>
+                <td class="content__time">4:07</td>
+              </tr>
+              <tr class="content__chart-row">
+                <td class="content__chart-play">
+                  <img src="%PUBLIC_URL%/tableplay.png" class="content__table-play">
+                </td>
+                <td class="content__chart-image">
+                  <img class="content__table-album" src="%PUBLIC_URL%/disc.jpg">
+                </td>
+                <td class="content__chart-song">
+                  <p class="content__table-song">Never Never Gonna Give You Up</p>
+                </td>
+                <td class="content__chart-artist">
+                  <p class="content__table-artist">Barry White</p>
+                </td>
+                <td class="content__time"></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="content__more-link">More tracks</p>
+        </div>
+        <div class="content__see-more">
+          <p class="content__ads">Don't want to see ads? <span class="content__upgrade">Upgrade Now</span></p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__container">
+          <div class="footer__row">
+            <div class="footer__col">
+              <h2 class="footer__heading">COMPANY</h2>
+              <ul class="footer__links">
+                <li>About Last.fm</li>
+                <li>Contact Us</li>
+                <li>Jobs</li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h2 class="footer__heading">HELP</h2>
+              <ul class="footer__links">
+                <li>Track My Music</li>
+                <li>Community Support</li>
+                <li>Community Guidelines</li>
+                <li>Help</li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h2 class="footer__heading">GOODIES</h2>
+              <ul class="footer__links">
+                <li>Download Scrobbler</li>
+                <li>Developer API</li>
+                <li>Free Music Downloads</li>
+                <li>Merchandise</li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h2 class="footer__heading">ACCOUNT</h2>
+              <ul class="footer__links">
+                <li>Inbox</li>
+                <li>Settings</li>
+                <li>Last.fm Pro</li>
+                <li>Logout</li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h2 class="footer__heading">FOLLOW US</h2>
+              <ul class="footer__links">
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__container">
+          <div class="footer__row">
+            <div class="footer__languages">
+              <ul class="footer__lang-selector">
+                <li class="footer__lang">English</li>
+                <li class="footer__lang">Deutsch</li>
+                <li class="footer__lang">Español</li>
+                <li class="footer__lang">Français</li>
+                <li class="footer__lang">Italiano</li>
+                <li class="footer__lang">日本語</li>
+                <li class="footer__lang">Polski</li>
+                <li class="footer__lang">Português</li>
+                <li class="footer__lang">Русский</li>
+                <li class="footer__lang">Svenska</li>
+                <li class="footer__lang">Türkçe</li>
+                <li class="footer__lang">简体中文</li>
+              </ul>
+              <p class="footer__timezone">Time zone: Europe/Moscow</p>
+              <div class="footer__info">
+                <ul>
+                  <li class="footer__info-item">CBS Interactive © 2022 Last.fm Ltd. All rights reserved</li>
+                  <li class="footer__info-item">Terms of Use</li>
+                  <li class="footer__info-item">Privacy Policy</li>
+                  <li class="footer__info-item">Legal Policies</li>
+                  <li class="footer__info-item">Cookies Policy</li>
+                  <li class="footer__info-item">Cookie Information</li>
+                  <li class="footer__info-item">Jobs at ViacomCBS</li>
+                  <li class="footer__info-item">Last.fm Music</li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__logo">
+              <p>Audioscrobbler</p>
+              <img class="footer__image" src="%PUBLIC_URL%/footer_logo.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
