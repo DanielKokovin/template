@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="../src/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -21,8 +22,334 @@
     <title>React App</title>
   </head>
   <body>
+    <header class="header">
+      <div class="header__player">
+        <img class="header__albumcover" src="https://www.last.fm/static/images/defaults/player_default_album.430223706b14.png">
+        <img class="header__backward" src="%PUBLIC_URL%/backward.png"/>
+        <img class="header__play" src="%PUBLIC_URL%/play.png"/>
+        <img class="header__forward" src="%PUBLIC_URL%/forward.png"/>
+      </div>
+      <div class="header__logo-container">
+        <img class="header__logo" src="%PUBLIC_URL%/logo.png"/>
+      </div>
+      <div class="header__navigation">
+        <img class="header__search" src="%PUBLIC_URL%/search.png">
+        <ul class="header__list">
+          <li class="header__item">Home</li>
+          <li class="header__item">Live</li>
+          <li class="header__item">Music</li>
+          <li class="header__item">Charts</li>
+          <li class="header__item">Events</li>
+          <li class="header__item">Features</li>
+        </ul>
+        <img class="header__avatar" src="%PUBLIC_URL%/default-avatar.png">
+      </div>
+    </header>
+    <main class="content">
+      <h2>Music</h2>
+      <h3>Hot right now</h3>
+      <div class="content__singers-container">
+        <div class="content__singer-and-name">
+          <img class="content__singer" src="%PUBLIC_URL%/kanye.jpg">
+          <h4 class="content__name">Kanye West</h4>
+          <p class="content__genre">hip-hop, rap</p>
+        </div>
+        <div class="content__singer-and-name">
+          <img class="content__singer" src="%PUBLIC_URL%/guns.jpg">
+          <h4 class="content__name">Guns N' Roses</h4>
+          <p class="content__genre">hard rock, heavy metal</p>
+        </div>
+        <div class="content__singer-and-name">
+          <img class="content__singer" src="%PUBLIC_URL%/cash.jpg">
+          <h4 class="content__name">Johnny Cash</h4>
+          <p class="content__genre">country, folk, blues</p>
+        </div>
+        <div class="content__singer-and-name">
+          <img class="content__singer" src="%PUBLIC_URL%/bowie.jpg">
+          <h4 class="content__name">David Bowie</h4>
+          <p class="content__genre">glam rock, pop, electronic</p>
+        </div>
+        <div class="content__singer-and-name">
+          <img class="content__singer" src="%PUBLIC_URL%/adele.jpg">
+          <h4 class="content__name">Adele</h4>
+          <p class="content__genre">pop, soul</p>
+        </div>
+        <div class="content__singer-and-name">
+          <img class="content__singer" src="%PUBLIC_URL%/eminem.jpg">
+          <h4 class="content__name">Eminem</h4>
+          <p class="content__genre">hip-hop, rap</p>
+        </div>
+        <div class="content__singer-and-name">
+          <img class="content__singer" src="%PUBLIC_URL%/aurora.jpg">
+          <h4 class="content__name">Aurora</h4>
+          <p class="content__genre">art pop, electropop</p>
+        </div>
+        <div class="content__singer-and-name">
+          <img class="content__singer" src="%PUBLIC_URL%/bbking.jpg">
+          <h4 class="content__name">B.B. King</h4>
+          <p class="content__genre">blues, soul, gospel</p>
+        </div>
+        <div class="content__singer-and-name">
+          <img class="content__singer" src="%PUBLIC_URL%/sinatra.jpg">
+          <h4 class="content__name">Frank Sinatra</h4>
+          <p class="content__genre">jazz, swing</p>
+        </div>
+        <div class="content__singer-and-name">
+          <img class="content__singer" src="%PUBLIC_URL%/shinedown.jpg">
+          <h4 class="content__name">Shinedown</h4>
+          <p class="content__genre">hard rock, alternative rock</p>
+        </div>
+        <div class="content__singer-and-name">
+          <img class="content__singer" src="%PUBLIC_URL%/stromae.jpg">
+          <h4 class="content__name">Stromae</h4>
+          <p class="content__genre">house, electronic, synth-pop</p>
+        </div>
+        <div class="content__singer-and-name">
+          <img class="content__singer" src="%PUBLIC_URL%/gorillaz.jpg">
+          <h4 class="content__name">Gorillaz</h4>
+          <p class="content__genre">electronic, hip-hop, trip-hop</p>
+        </div>
+      </div>
+      <h3>Popular tracks</h3>
+      <div class="content__songs-container">
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/attention.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">special</h4>
+            <p class="content__singer-name">Shinedown</p>
+            <p class="content__genre">alternative rock</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/heavupsdown.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">SAY10</h4>
+            <p class="content__singer-name">Marilyn Manson</p>
+            <p class="content__genre">industrial metal, punk rock, gothic rock</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/appfordes.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">Mr. Brownstone</h4>
+            <p class="content__singer-name">Guns N' Roses</p>
+            <p class="content__genre">heavy metal, hard rock</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/goodthings.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">I Need A Dollar</h4>
+            <p class="content__singer-name">Aloe Blacc</p>
+            <p class="content__genre">soul</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/curtcall.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">The Real Slim Shady</h4>
+            <p class="content__singer-name">Eminem</p>
+            <p class="content__genre">hip-hop, rap</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/honkcha.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">Rocket Man</h4>
+            <p class="content__singer-name">Elton John</p>
+            <p class="content__genre">soft rock, pop</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/borntodie.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">Summertime Sadness</h4>
+            <p class="content__singer-name">Lana Del Rey</p>
+            <p class="content__genre">pop, trip-hop</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/runwithwolves.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">Running With The Wolves</h4>
+            <p class="content__singer-name">Aurora</p>
+            <p class="content__genre">scandipop, electropop</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/judas.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">Judas</h4>
+            <p class="content__singer-name">Fozzy</p>
+            <p class="content__genre">heavy metal, hard rock</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/rawlings.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">Cumberland Gap</h4>
+            <p class="content__singer-name">David Rawlings</p>
+            <p class="content__genre">folk, country</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/californication.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">Californication</h4>
+            <p class="content__singer-name">Red Hot Chili Peppers</p>
+            <p class="content__genre">alternative rock, func rock</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/rammstein.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">Diamant</h4>
+            <p class="content__singer-name">Rammstein</p>
+            <p class="content__genre">industrial metal, electro-industrial</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/foreveryoung.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">Big In Japan</h4>
+            <p class="content__singer-name">Alphaville</p>
+            <p class="content__genre">synth-pop, new wave</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/unknownpleasures.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">She's Lost Control</h4>
+            <p class="content__singer-name">Joy Division</p>
+            <p class="content__genre">post punk, gothic rock</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/predator.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">It Was A Good Day</h4>
+            <p class="content__singer-name">Ice Cube</p>
+            <p class="content__genre">hip-hop, g-funk</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/purplerain.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">Purple Rain</h4>
+            <p class="content__singer-name">Prince And The Revolution</p>
+            <p class="content__genre">rock, gospel, soul</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/aaerosmith.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">Dream On</h4>
+            <p class="content__singer-name">Aerosmith</p>
+            <p class="content__genre">hard rock, blues rock</p>
+          </div>
+        </div>
+        <div class="content__song">
+          <img class="content__album-cover" src="%PUBLIC_URL%/starman.jpg">
+          <div class="content__song-info">
+            <h4 class="content__song-name">Starman</h4>
+            <p class="content__singer-name">David Bowie</p>
+            <p class="content__genre">glam rock</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__container">
+          <div class="footer__row">
+            <div class="footer__col">
+              <h2 class="footer__heading">COMPANY</h2>
+              <ul class="footer__links">
+                <li>About Last.fm</li>
+                <li>Contact Us</li>
+                <li>Jobs</li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h2 class="footer__heading">HELP</h2>
+              <ul class="footer__links">
+                <li>Track My Music</li>
+                <li>Community Support</li>
+                <li>Community Guidelines</li>
+                <li>Help</li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h2 class="footer__heading">GOODIES</h2>
+              <ul class="footer__links">
+                <li>Download Scrobbler</li>
+                <li>Developer API</li>
+                <li>Free Music Downloads</li>
+                <li>Merchandise</li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h2 class="footer__heading">ACCOUNT</h2>
+              <ul class="footer__links">
+                <li>Inbox</li>
+                <li>Settings</li>
+                <li>Last.fm Pro</li>
+                <li>Logout</li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h2 class="footer__heading">FOLLOW US</h2>
+              <ul class="footer__links">
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__container">
+          <div class="footer__row">
+            <div class="footer__languages">
+              <ul class="footer__lang-selector">
+                <li class="footer__lang">English</li>
+                <li class="footer__lang">Deutsch</li>
+                <li class="footer__lang">Español</li>
+                <li class="footer__lang">Français</li>
+                <li class="footer__lang">Italiano</li>
+                <li class="footer__lang">日本語</li>
+                <li class="footer__lang">Polski</li>
+                <li class="footer__lang">Português</li>
+                <li class="footer__lang">Русский</li>
+                <li class="footer__lang">Svenska</li>
+                <li class="footer__lang">Türkçe</li>
+                <li class="footer__lang">简体中文</li>
+              </ul>
+              <p class="footer__timezone">Time zone: Europe/Moscow</p>
+              <div class="footer__info">
+                <ul>
+                  <li class="footer__info-item">CBS Interactive © 2022 Last.fm Ltd. All rights reserved</li>
+                  <li class="footer__info-item">Terms of Use</li>
+                  <li class="footer__info-item">Privacy Policy</li>
+                  <li class="footer__info-item">Legal Policies</li>
+                  <li class="footer__info-item">Cookies Policy</li>
+                  <li class="footer__info-item">Cookie Information</li>
+                  <li class="footer__info-item">Jobs at ViacomCBS</li>
+                  <li class="footer__info-item">Last.fm Music</li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__logo">
+              <p>Audioscrobbler</p>
+              <img class="footer__image" src="%PUBLIC_URL%/footer_logo.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
