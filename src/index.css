@@ -184,9 +184,13 @@ h3{
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
+.content__singer-and-name{
+    width: 100%;
+}
 .content__singer{
-    height: 200px;
-    clip-path: circle(42% at 75px 75px);
+    height: 80%;
+    width: 85%;
+    clip-path: circle(40% at 50% 40%);
     z-index: 0;
 }
 .content__name,
