@@ -245,7 +245,6 @@ h3{
     display: flex;
     padding-top: 25px;
     justify-content: flex-end;
-    margin-bottom: 30px;
 }
 
 .content__results{
@@ -355,6 +354,7 @@ input[type=submit]{
     margin-top: 12px;
     text-align: right;
     color: #005399;
+    margin-bottom: 30px;
 }
 .content__chart{
     margin-top: 24px;
